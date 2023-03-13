@@ -1,0 +1,141 @@
+site_name: The name of your documentation homepage
+site_url: https://anirudhrao.com
+site_description: Description for your documentation homepage
+site_author: Anirudh Rao
+
+theme:
+  name: material
+
+  language: en
+
+  icon:
+    logo: fontawesome/solid/house-chimney-crack
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: indianred
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: indianreddark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Noto Serif
+    code: Source Code Pro
+
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select (insiders)
+    # - content.tooltips (insiders)
+    - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    # - navigation.path (insiders)
+    # - navigation.path (insiders)
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - toc.integrate
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+  - tags:
+      enabled: !ENV [CI, false]
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      tags_slugify_separator: "-"
+
+  # - blog:
+  #     enabled: !ENV [CI, false]
+  #     blog_dir: path/to/folder
+  #     blog_toc: true
+  #     post_date_format: long
+
+extra:
+  homepage: https://anirudhrao.com
+
+  generator: false # Remove Made with Material for MkDocs notice
+
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/raoanirudh1
+      name: Anirudh Rao on Twitter
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/raoanirudh
+      name: Anirudh Rao on GitHub
+
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/rao_anirudh
+      name: Anirudh Rao on Instagram
+
+    - icon: fontawesome/brands/linkedin
+      link: https://inkedin.com/in/raoanirudh/
+      name: Anirudh Rao on LinkedIn
+
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<anirudh.rao@globalquakemodel.org>
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: Copyright &copy; 2023 Anirudh Rao
