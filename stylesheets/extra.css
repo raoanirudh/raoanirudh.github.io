@@ -1,0 +1,155 @@
+@import "custom_colors.css";
+
+[data-md-color-scheme="indianred"] {
+    /* Primary color shades */
+    --md-primary-fg-color: var(--color-primary-500);
+    --md-primary-fg-color--light: var(--color-primary-300);
+    --md-primary-fg-color--dark: var(--color-primary-700);
+    --md-primary-bg-color: var(--color-primary-100);
+    --md-primary-bg-color--light: var(--color-primary-100-transparent-700);
+
+    /* Accent color shades */
+    --md-accent-fg-color: var(--color-primary-400);
+    --md-accent-fg-color--transparent: var(--color-primary-transparent-100);
+    --md-accent-bg-color: var(--color-primary-100);
+    --md-accent-bg-color--light: var(--color-primary-100-transparent-700);
+
+    /* Default color shades */
+    --md-default-fg-color: hsla(0, 0%, 0%, 0.87);
+    --md-default-fg-color--light: hsla(0, 0%, 0%, 0.54);
+    --md-default-fg-color--lighter: hsla(0, 0%, 0%, 0.32);
+    --md-default-fg-color--lightest: hsla(0, 0%, 0%, 0.07);
+    --md-default-bg-color: var(--color-primary-tint-098);
+    --md-default-bg-color--light: hsla(0, 50%, 99%, 0.7);
+    --md-default-bg-color--lighter: hsla(0, 50%, 99%, 0.3);
+    --md-default-bg-color--lightest: hsla(0, 50%, 99%, 0.12);
+
+    /* Code color shades */
+    --md-code-fg-color: hsla(200, 18%, 26%, 1);
+    --md-code-bg-color: hsla(0, 0%, 96%, 1);
+
+    /* Code highlighting color shades */
+    --md-code-hl-color: --color-warning-transparent-600;
+    --md-code-hl-number-color: hsla(0, 67%, 50%, 1);
+    --md-code-hl-special-color: hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color: hsla(291, 45%, 50%, 1);
+    --md-code-hl-constant-color: hsla(250, 63%, 60%, 1);
+    --md-code-hl-keyword-color: hsla(219, 54%, 51%, 1);
+    --md-code-hl-string-color: hsla(150, 63%, 30%, 1);
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+
+    /* Typeset color shades */
+    --md-typeset-color: var(--md-default-fg-color);
+
+    /* Typeset `a` color shades */
+    --md-typeset-a-color: var(--md-primary-fg-color);
+
+    /* Typeset `mark` color shades */
+    --md-typeset-mark-color: --color-warning-transparent-600;
+
+    /* Typeset `del` and `ins` color shades */
+    --md-typeset-del-color: hsla(6, 90%, 60%, 0.15);
+    --md-typeset-ins-color: hsla(150, 90%, 44%, 0.15);
+
+    /* Typeset `kbd` color shades */
+    --md-typeset-kbd-color: hsla(0, 0%, 98%, 1);
+    --md-typeset-kbd-accent-color: hsla(0, 100%, 100%, 1);
+    --md-typeset-kbd-border-color: hsla(0, 0%, 72%, 1);
+
+    /* Typeset `table` color shades */
+    --md-typeset-table-color: hsla(0, 0%, 0%, 0.12);
+    --md-typeset-table-color--light: hsla(0, 0%, 0%, 0.035);
+
+    /* Admonition color shades */
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-admonition-bg-color: var(--md-default-bg-color);
+
+    /* Warning color shades */
+    --md-warning-fg-color: hsla(0, 0%, 0%, 0.87);
+    --md-warning-bg-color: --color-warning-500;
+
+    /* Footer color shades */
+    --md-footer-fg-color: hsla(0, 0%, 100%, 1);
+    --md-footer-fg-color--light: hsla(0, 0%, 100%, 0.70);
+    --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.45);
+    --md-footer-bg-color: var(--color-primary-300);
+    --md-footer-bg-color--dark: var(--color-primary-500);
+}
+
+[data-md-color-scheme="indianreddark"] {
+    --md-hue: 0;
+
+    /* Primary color shades */
+    --md-primary-fg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
+    --md-primary-fg-color--light: hsla(var(--md-hue), 15%, 15%, 0.75);
+    --md-primary-fg-color--dark: hsla(var(--md-hue), 15%, 10%, 1);
+    --md-primary-bg-color: hsla(var(--md-hue), 75%, 95%, 1);
+    --md-primary-bg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
+
+    /* Default color shades */
+    --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 0.92);
+    --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
+    --md-default-fg-color--lighter: hsla(var(--md-hue), 75%, 90%, 0.32);
+    --md-default-fg-color--lightest: hsla(var(--md-hue), 75%, 90%, 0.12);
+    --md-default-bg-color: hsla(var(--md-hue), 10%, 15%, 0.98);
+    --md-default-bg-color--light: hsla(var(--md-hue), 15%, 15%, 0.54);
+    --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 15%, 0.26);
+    --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 15%, 0.07);
+
+    /* Accent color shades */
+    --md-accent-fg-color: var(--color-primary-transparent-900);
+    --md-accent-fg-color--transparent: var(--color-primary-transparent-100);
+    --md-accent-bg-color: var(--md-default-bg-color);
+    --md-accent-bg-color--light: var(--md-default-bg-color--light);
+
+    /* Code color shades */
+    --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 1);
+    --md-code-bg-color: hsla(var(--md-hue), 10%, 20%, 1);
+
+    /* Code highlighting color shades */
+    --md-code-hl-color: var(--color-info-transparent-200);
+    --md-code-hl-number-color: hsla(6, 74%, 63%, 1);
+    --md-code-hl-special-color: hsla(340, 83%, 66%, 1);
+    --md-code-hl-function-color: hsla(291, 57%, 65%, 1);
+    --md-code-hl-constant-color: hsla(250, 62%, 70%, 1);
+    --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
+    --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+
+    /* Typeset color shades */
+    --md-typeset-color: var(--md-default-fg-color);
+
+    /* Typeset `a` color shades */
+    --md-typeset-a-color: var(--color-primary-300);
+
+    /* Typeset `mark` color shades */
+    --md-typeset-mark-color: var(--color-info-transparent-300);
+
+    /* Typeset `kbd` color shades */
+    --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);
+    --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 94%, 0.2);
+    --md-typeset-kbd-border-color: hsla(var(--md-hue), 15%, 14%, 1);
+
+    /* Typeset `table` color shades */
+    --md-typeset-table-color: hsla(var(--md-hue), 75%, 95%, 0.12);
+    --md-typeset-table-color--light: hsla(var(--md-hue), 75%, 95%, 0.035);
+
+    /* Admonition color shades */
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-admonition-bg-color: var(--md-default-bg-color);
+
+    /* Footer color shades */
+    --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
+    --md-footer-bg-color--dark: hsla(var(--md-hue), 15%, 10%, 1);
+
+}
